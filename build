@@ -1,0 +1,1 @@
+docker build -t yyp-ubt:latest --no-cache .
