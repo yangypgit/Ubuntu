@@ -4,9 +4,9 @@ FROM ubuntu:18.04
 MAINTAINER Yangyp <877696729@qq.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-COPY sources.list.aly /etc/apt/sources.list.aly
+COPY sources.list.aly /etc/apt/sources.list
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update -y && apt-get install -y --no-install-recommends \
     software-properties-common \
     build-essential \
     zsh \
